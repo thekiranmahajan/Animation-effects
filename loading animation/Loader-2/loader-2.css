@@ -1,0 +1,40 @@
+body{
+      background: black;
+    }
+.content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        }
+.dots{
+      height: 20px;
+      width: 3px;
+      background:#d9ff40;
+      border-radius: 20px;
+      display: flex;
+      margin: 7px;
+      animation: up-down 1s ease infinite alternate;
+       } 
+   
+.dots:nth-child(2){
+        animation-delay: 0.2s;    
+       }
+.dots:nth-child(3){
+        animation-delay: 0.4s;
+       }
+.dots:nth-child(4){
+        animation-delay: 0.6s;
+       }
+.dots:nth-child(5){
+        animation-delay: 0.8s;
+       }
+    
+@keyframes up-down{
+        from{
+           transform: scaleY(0);
+        }
+        to{
+           transform: scaleY(60px);
+        }
+     }
